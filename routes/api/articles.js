@@ -13,4 +13,6 @@ router
 //   .put(articlesController.update)
      .delete(articlesController.remove);
 
+// router.route("*")
+//   .get(client/build/index.html);
 module.exports = router;
