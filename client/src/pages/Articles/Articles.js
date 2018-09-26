@@ -85,23 +85,29 @@ class Articles extends Component {
               <h1>Search for Articles!</h1>
             </Jumbotron>
             <form>
+              <label>Title:</label>
               <Input
                 value={this.state.title}
                 onChange={this.handleInputChange}
                 name="title"
+                id="tile"
                 placeholder="Title (required)"
               />
+              <label>Start Date: *</label>
               <Input
                 value={this.state.startdate}
                 onChange={this.handleInputChange}
                 name="startdate"
-                placeholder="Start Date (required)"
+                id="startdate"
+                placeholder="YYYYMMDD (required)"
               />
+              <label>End Date: *</label>
               <Input
                 value={this.state.enddate}
                 onChange={this.handleInputChange}
                 name="enddate"
-                placeholder="End Date (required)"
+                id="enddate"
+                placeholder="YYYYMMDD (required)"
               />
               <FormBtn
                 disabled={!(this.state.title && this.state.startdate && this.state.enddate)}
